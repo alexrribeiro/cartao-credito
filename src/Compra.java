@@ -27,8 +27,9 @@ public class Compra implements Comparable<Compra> {
                 "Valor: " + valor;
     }
 
+    // necessário implementar o compareTo ao implementar a interface Comparable
     @Override
     public int compareTo(Compra outraCompra) {
-        return Double.valueOf(this.valor).compareTo(Double.valueOf(outraCompra.valor));
+        return Double.valueOf(valor).compareTo(Double.valueOf(outraCompra.valor));
     }
 }

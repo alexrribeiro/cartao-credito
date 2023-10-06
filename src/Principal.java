@@ -35,7 +35,7 @@ public class Principal {
         }
 
         System.out.println("COMPRAS REALIZADAS");
-        Collections.sort(cartao.getCompras());
+        Collections.sort(cartao.getCompras()); // necessário implementar Comparable na classe Compra
         for (Compra c: cartao.getCompras()) {
             System.out.println(c.getLocal() + "\t" + c.getDescricao() + "\t" + c.getValor());
         }
